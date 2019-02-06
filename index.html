@@ -7,22 +7,36 @@
 	</head>
 
 	<body>
-		<p id="party">1 Party Goers</p>
-		<p id="money">$0.00</p>
-		<p id="clout">0.00% Clout</p>
+		<h3>Stats</h3>
+		<span id="party"></span> | 
+		<span id="money"></span> | 
+		<span id="clout"></span>
 		
-		<p id="beer">0 Beer</p>
+		<h3>Party Supplies</h3>
+		<span id="balloon"></span> <button onclick="buyBalloon()" id="balloonUpgrade">Buy ($0.25)</button></br>
+		<span id="beer"></span> <button onclick="buyBeer()" id="beerUpgrade">Buy ($4)</button></br>
+		<span id="hardAlcohol"></span> <button onclick="buyHardAlcohol()" id="hardAlcoholUpgrade">Buy ($12)</button></br>
+		<span id="beerPongTable"></span> <button onclick="buyBeerPongTable()" id="beerPongTableUpgrade">Buy ($50)</button></br>
+		<span id="keg"></span> <button onclick="buyKeg()" id="kegUpgrade">Buy ($100)</button></br>
+		<span id="speaker"></span> <button onclick="buySpeaker()" id="speakerUpgrade">Buy ($300)</button>
 		
-		<button onclick="inviteSomeone()">Invite Someone</button>
-		<button onclick="buyBeer()" id="beerUpgrade" disabled>Buy Beer ($5)</button>
+		<h3>Actions</h3>
+		<button onclick="invite()">Invite Someone</button>
 
+		<h3>Text Messages</h3>
 		<div id="consoleBox">
-			<ul id="console">
-				<li id="normalMessage">It's just you here...</li>
-			</ul>
+			<ul id="console"></ul>
 		</div>
 		
+		<h3>Game Data</h3>
+		<button onclick="saveGame()">Save Game</button>
+		<button onclick="loadGame()">Load Game</button>
+		<button onclick="deleteSave()">Delete Save</button>
+		
+		<p>Copyright 2019 - Ver. alpha 0.2</p>
+		
+		<script src="chance.js" charset="utf-8" type="text/javascript"></script>
+		<script src="dialogue.js" charset="utf-8" type="text/javascript"></script>		
 		<script src="main.js" charset="utf-8" type="text/javascript"></script>
-		<script src="dialogue.js" charset="utf-8" type="text/javascript"></script>
 	</body>
 </html>

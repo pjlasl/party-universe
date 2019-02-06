@@ -1,7 +1,7 @@
 #consoleBox {
 	overflow: auto;
-	width: 900px;
-	height: 235px;
+	width: 600px;
+	height: 200px;
 }
 
 #console {
@@ -16,6 +16,6 @@
 	color: red;
 }
 
-#normalMessage {
+#keyMessage {
 	color: grey;
 }
