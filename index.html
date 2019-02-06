@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+		<title>Party Universe</title>
+	</head>
+
+	<body>
+		<p id="party">1 Party Goers</p>
+		<p id="money">$0.00</p>
+		<p id="clout">0.00% Clout</p>
+		
+		<p id="beer">0 Beer</p>
+		
+		<button onclick="inviteSomeone()">Invite Someone</button>
+		<button onclick="buyBeer()" id="beerUpgrade" disabled>Buy Beer ($5)</button>
+
+		<div id="consoleBox">
+			<ul id="console">
+				<li id="normalMessage">It's just you here...</li>
+			</ul>
+		</div>
+		
+		<script src="main.js" charset="utf-8" type="text/javascript"></script>
+		<script src="dialogue.js" charset="utf-8" type="text/javascript"></script>
+	</body>
+</html>

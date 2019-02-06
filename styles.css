@@ -1,0 +1,21 @@
+#consoleBox {
+	overflow: auto;
+	width: 900px;
+	height: 235px;
+}
+
+#console {
+	list-style: none;
+}
+
+#acceptanceMessage {
+	color: green;
+}
+
+#rejectionMessage {
+	color: red;
+}
+
+#normalMessage {
+	color: grey;
+}

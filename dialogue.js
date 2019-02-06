@@ -1,0 +1,42 @@
+var rejectionList = [
+	"I don't have a ride!",
+	"I can't, my dog is throwing up.",
+	"Sorry, I have a package I have to sign for.",
+	"I wish but Uber surge pricing is at 5.6x right now!",
+	"It's raining, maybe another time.",
+	"I had a burrito for dinner and now I can't move.",
+	"My kid is sick, I gotta stay here.",
+	"I have a migraine, party on without me.",
+	"I can't find my keys.",
+	"I'm too upset about the state of the country to party right now.",
+	"I have terrible diarrhea, I'll stay put.",
+	"There's a flash flood warning in my area, probably best to stay put.",
+	"I just really don't want to be hungover tomorrow.",
+	"I can't afford to spot some cash and I'd rather not come without a donation.",
+	"Didn't we already party last weekend...?",
+	"I'm just not feeling it this week.",
+	"I started Twitter beef so I'm trying to keep it low key.",
+	"You know the exposed video? That was me. Probably best to lay low.",
+	"Sorry, my nails are still drying.",
+	"I'm dog sitting, unless he can come, too...?",
+	"I found a baby on my doorstep and I have to raise it now.",
+	"I'mma be real with you... I don't feel like putting on pants.",
+	"I'd rather be asleep.",
+	"I'd rather be dead.",
+	"My social anxiety is flaring up.",
+	"I have to Facetime my long distance girlfriend, sorry!",
+	"I'm in the middle of a Twitter argument, can we party later?",
+	"Sorry, I've got a doctor's appointment",
+	"I'd love to... But I can't",
+	"Sorry man, I got a thing...",
+	"I'm actually late for class!"
+];
+
+var acceptanceList = [
+	"It ain't a party until I'm here!",
+	"Parties are like, kinda my thing.",
+	"A party? I'm game.",
+	"You know I'm always down for a party.",
+	"I hope the beer is still cold!",
+	"I'm there."
+];
