@@ -1,11 +1,22 @@
-#consoleBox {
+#textMessageBox {
 	overflow: auto;
 	width: 600px;
 	height: 200px;
+	background: black;
+	color: white;
 }
 
-#console {
+#textMessages {
 	list-style: none;
+}
+
+ul {
+	padding-left: 6px;
+	margin-top: 6px;
+}
+
+li {
+	margin-bottom: 6px;
 }
 
 #acceptanceMessage {
@@ -18,4 +29,16 @@
 
 #keyMessage {
 	color: grey;
+}
+
+#faceSpaceBox {
+	overflow: auto;
+	width: 600px;
+	height: 200px;
+	background: darkblue;
+	color: white;
+}
+
+#faceSpaceFeed {
+	list-style: none;
 }
