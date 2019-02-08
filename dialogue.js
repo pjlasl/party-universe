@@ -1,3 +1,9 @@
+/* =============================================================
+// dialogue.js
+// -------------------------------------------------------------
+// All the key dialogue used in the game, in English.
+// ===========================================================*/
+
 var keyList = [
 	"It's just you here...",
 	"Welcome back to the party!",
@@ -15,27 +21,27 @@ var rejectionList = [
 	"I have a migraine, party on without me.",
 	"I can't find my keys.",
 	"I'm too upset about the state of the country to party right now.",
-	"I have terrible diarrhea.",
+	"i have terrible diarrhea.",
 	"There's a flash flood warning in my area.",
 	"I just really don't want to be hungover tomorrow.",
 	"Didn't we already party last weekend...?",
 	"I'm just not feeling it this week.",
-	"I started Twitter beef so I'm trying to keep it low key.",
+	"I started FriendSpace beef so I'm trying to keep it low key.",
 	"You know the exposed video? That was me. Probably best to lay low.",
 	"Sorry, my nails are still drying.",
 	"I'm dog sitting.",
 	"I'm cat sitting.",
-	"I'm baby sitting.",
-	"I found a baby on my doorstep and I have to raise it now.",
+	"i found a baby on my doorstep and I have to raise it now.",
 	"I don't feel like putting on pants.",
 	"I'd rather be asleep.",
-	"I'd rather be dead.",
+	"I'd Rather Be Dead",
 	"My social anxiety is flaring up.",
-	"I'm in the middle of a Twitter argument, party later?",
+	"I'm in the middle of a FriendSpace argument, party later?",
 	"Sorry, I've got a doctor's appointment",
 	"I'd love to... But I can't",
 	"Sorry man, I got a thing...",
-	"I'm actually late for class!"
+	"I'm actually late for class!",
+	"Sorry! I'm stuck in an escape room rn"
 ];
 
 var acceptanceList = [
@@ -45,14 +51,16 @@ var acceptanceList = [
 	"You know I'm always down for a party.",
 	"I hope the beer is still cold!",
 	"I'm there.",
-	"Is it even a party without me there?"
+	"Is it even a party without me there?",
+	"Hope there's enough beer!"
 ];
 
 var noRoomList = [
 	"I can't squeeze in!",
 	"Looks like there's no more room!",
 	"I'd love to, but there's no room!",
-	"Looks like your party is at max capacity"
+	"Looks like your party is at max capacity",
+	"No room for me."
 ];
 
 var kickedOutList = [
@@ -64,10 +72,65 @@ var kickedOutList = [
 	"Really? Your party sucks anyway.",
 	"Forget this party.",
 	"I didn't even want to be here, anyway.",
-	"Smell ya later."
+	"Smell ya later.",
+	"Peace!"
 ];
 
-var genericUpdates = [
+var genericTextMessages = [
+	"Hey dude, what's up?",
+	"We still on for tomorrow?",
+	"Dude I heard you were throwing a party? What's up with that?",
+	"hey man lets not talk about last night... we cool, right?",
+	"we gotta chill sometime man hmu",
+	"whats this talk about a party?",
+	"omg did you see that light in the sky?",
+	"yo is the power at your house getting weird?",
+	"do you have that $20 you owe me?"
+];
+
+var genericWrongNumberMessages = [
+	"Hey Kate, can you pick up the BBQ?",
+	"Todavía no he olvidado el incidente.",
+	"ainda precisamos ir às compras",
+	"mike, please call me...its urgent",
+	"hi this is barb i was just wondering if u wanted to come over for pizza, i hope this is the rite number",
+	"hello?",
+	"salom?",
+	"Need some INSTANT-CA$H right now? Get up to $1000$--TODAY! Reply YES for further info, or NO for -UNSUBSCRIBE-",
+	"HURRY UP!TODAY ONLY!RayBan&Oakley Sunglasses Outlets. ALL SALES 88% OFF! Shop Now",
+	"New offer 39ffasi3asd0 show this for a $9 cut (exp. 10/23/99). Join our loyalty club & your 5th haircut is FREE! Reply STOP to opt out",
+	"Due to a new legislation, those struggling with debt can now apply to have it written off. For FREE information reply INFO or to opt-out text stop.",
+	"we kn0w y0u 4re 0uT tHEre",
+	"y0u 4re tHe sEED anD Us tHE tRee",
+	"kEEp PartYing",
+	"thEre Is 0nLy 1 wAy...tO PARTY",
+	"pArTy aLL nite aND dAy",
+	"y0u cAn rEaCH uS...tHr0ugH pArTy"
+];
+
+var genericFriendSpacePosts = [
+	"party time.",
+	"who wants to party?",
+	"i can't wait to party.",
+	"I've been seeing a lot more stars in the sky lately.",
+	"Do aliens exist?",
+	"I want to believe",
+	"always looking for the best parties...sometimes i find them, sometimes they find me.",
+	"still searching...",
+	"im still sick from that burrito last night, ugh.",
+	"yo friends, anyone else feel sick after last nights pizza party? was there something in the wings?",
+	"just had ate too much pizza... guess it was possible. oof.",
+	"currently in the middle of an argument where i just realized i was wrong. gonna keep this going tho.",
+	"I need a really good nap :(",
+	"Pizza time!",
+	"In need of a good hug. :/",
+	"who does the emojis with the nose anymore? only weirdos... :-)",
+	"just trying to get this bread (i love carbs)",
+	"working on a new beat, gonna be fire, so stoked",
+	"y'all hear that new yung ez joint?",
+	"I heard someone was trying to throw the biggest party ever?",
+	"wheres this epic party i keep hearing about? someone text me the addy",
+	"ALL YOUR BASE ARE BELONG TO US",
 	"I wonder if there's any cool parties happening.",
 	"I haven't been the same since the accident.",
 	"What are your favorite party songs?",

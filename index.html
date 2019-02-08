@@ -3,13 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<title>Party Universe</title>
 	</head>
 
 	<body>
 		<h3>Stats</h3>
-		<span id="party"></span> || 
-		<span id="money"></span> || 
+		<span id="party"></span>, 
+		<span id="money"></span>, 
 		<span id="clout"></span></br>
 		<span id="doorFee"></span>
 		<button onclick="doorFee(1)">+$1</button>
@@ -27,22 +28,36 @@
 		<h3>Venues</h3>
 		
 		<h3>Promotions</h3>
-		<button onclick="invite()">Send a Text (Free)</button>
+		<button onclick="sendAText()" id="sendAText">Send a Text ($0.25)</button>
 
-		<h3>Text Messages</h3>
-		<div id="textMessageBox"><ul id="textMessages"></ul></div>
-		
-		<h3>FaceSpace</h3>
-		<div id="faceSpaceBox"><ul id="faceSpaceFeed"></ul></div>
+		<h3>Phone</h3>
+		<div id="textMessageBox">
+			<h3>Messages</h3>
+		<ul id="textMessages"></ul></div>
+
+		<div id="friendSpaceBox">
+			<h3>FriendSpace</h3>
+			<div id="createPost">
+				<h4>Create post</h4>
+				<textarea id="statusUpdate" rows=3></textarea></br>
+				<button onclick="submitPost()">Share</button>
+			</div>
+			<ul id="friendSpaceFeed"></ul>
+			<p>End of feed</p>
+		</div>
 		
 		<h3>Game Data</h3>
 		<button onclick="saveGame()">Save Game</button>
 		<button onclick="loadGame()">Load Game</button>
 		<button onclick="deleteSave()">Delete Save</button>
+		<button onclick="getHiddenStatsInConsole()">DEBUG: Hidden Stats in Console</button>
 		
-		<p>Copyright 2019 - Ver. alpha 1.1</p>
+		<p>Since this is the alpha version, expect save files to break. If the game is buggy, try deleting your save.</p>
+		<p>Copyright 2019 - Ver. alpha 1.3</p>
 		
 		<script src="chance.js" charset="utf-8" type="text/javascript"></script>
+		<script src="gameInfo.js" charset="utf-8" type="text/javascript"></script>
+		<script src="gameData.js" charset="utf-8" type="text/javascript"></script>
 		<script src="dialogue.js" charset="utf-8" type="text/javascript"></script>		
 		<script src="main.js" charset="utf-8" type="text/javascript"></script>
 	</body>

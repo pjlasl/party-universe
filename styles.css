@@ -1,44 +1,109 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+#textMessageBox > ul,
+#friendSpaceBox > ul {
+	margin-top: 0px;
+	padding: 0px;
+}
+
+#textMessageBox,
+#friendSpaceBox {
+	padding: 20px;
+}
+
+#textMessages,
+#friendSpaceFeed {
+	list-style: none;
+}
+
 #textMessageBox {
 	overflow: auto;
-	width: 600px;
-	height: 200px;
+	width: 380px;
+	height: 680px;
 	background: black;
 	color: white;
 }
 
-#textMessages {
-	list-style: none;
+#friendSpaceBox {
+	overflow: auto;
+	width: 380px;
+	height: 680px;
+	background: lightblue;
+	color: black;
 }
 
-ul {
-	padding-left: 6px;
-	margin-top: 6px;
+#textMessageBox > h3 {
+	color: lightgrey;
+	text-align: center;
+	margin-top: 0px;
 }
 
-li {
-	margin-bottom: 6px;
+#textMessages > li > small {
+	color: lightgrey;
+	text-align: right;
+}
+
+#friendSpaceBox > h3 {
+	text-align: center;
+	color: darkblue;
+	margin-top: 0px;
+}
+
+#friendSpaceBox > p {
+	color: darkgrey;
+	text-align: center;
+	margin-top: 0px;
+}
+
+#textMessages > li {
+	color: white;
+	padding: 8px;
+	margin-bottom: 12px;
+	border-radius: 6px;
+}
+
+#friendSpaceFeed > li {
+	background: white;
+	padding: 8px;
+	margin-bottom: 12px;
+	border-radius: 6px;
 }
 
 #acceptanceMessage {
-	color: green;
+	background: darkgreen;
 }
 
 #rejectionMessage {
-	color: red;
+	background: darkred;
 }
 
 #keyMessage {
-	color: grey;
-}
-
-#faceSpaceBox {
-	overflow: auto;
-	width: 600px;
-	height: 200px;
 	background: darkblue;
-	color: white;
 }
 
-#faceSpaceFeed {
-	list-style: none;
+#defaultMessage {
+	background: #404040;
+}
+
+#createPost {
+	margin-bottom: 20px;
+}
+
+#createPost > textarea {
+	width: 98%;
+	resize: none;
+}
+
+#createPost > h4 {
+	margin: 10px 0;
+}
+
+#friendSpaceFeed > li > b {
+	color: darkblue;
+}
+
+#friendSpaceFeed > li > small {
+	color: grey;
 }
