@@ -1,15 +1,16 @@
-/* =============================================================
+// =============================================================
 // gameInfo.js
 // -------------------------------------------------------------
 // Baseline game info that is used for adding items and other
 // information about the game. All this data shouldn't be
 // changed.
-// ===========================================================*/
+// =============================================================
 
 var gameInfo = {	
 	// Supplies
 	supplies: {
 		100: {
+			id: "balloon",
 			name: "Balloon",
 			description: "Every party has to have balloons, right?",
 			cost: 0.25,
@@ -17,6 +18,7 @@ var gameInfo = {
 			swag: -2
 		},
 		101: {
+			id: "snack",
 			name: "Snack",
 			description: "Just your generic looking snack.",
 			cost: 10,
@@ -24,6 +26,7 @@ var gameInfo = {
 			swag: 0
 		},
 		102: {
+			id: "beerPongTable",
 			name: "Beer Pong Table",
 			description: "Try playing doubles!",
 			cost: 50,
@@ -31,6 +34,7 @@ var gameInfo = {
 			swag: 2
 		},
 		103: {
+			id: "strobeLight",
 			name: "Strobe Light",
 			description: "I think I'm gonna be sick...",
 			cost: 150,
@@ -38,6 +42,7 @@ var gameInfo = {
 			swag: 10
 		},
 		104: {
+			id: "djEquipment",
 			name: "DJ Equipment",
 			description: "Play freebird (dubstep remix)!",
 			cost: 600,
@@ -45,6 +50,7 @@ var gameInfo = {
 			swag: 20
 		},
 		105: {
+			id: "televisionSet",
 			name: "Television Set",
 			description: "What channel's the game?",
 			cost: 1500,
@@ -52,6 +58,7 @@ var gameInfo = {
 			swag: 10
 		},
 		106: {
+			id: "bounceHouse",
 			name: "Bounce House",
 			description: "Pairs really well with some booze.",
 			cost: 4000,
@@ -59,6 +66,7 @@ var gameInfo = {
 			swag: 0
 		},
 		107: {
+			id: "tiger",
 			name: "Tiger",
 			description: "Be careful, he bites.",
 			cost: 20000,
@@ -69,6 +77,7 @@ var gameInfo = {
 	
 	alcohol: {
 		200: {
+			id: "beer",
 			name: "Beer",
 			description: "What IPA's do you have on tap?",
 			cost: 4,
@@ -76,6 +85,7 @@ var gameInfo = {
 			swag: 1
 		},
 		201: {
+			id: "wine",
 			name: "Wine",
 			description: "Mom doesn't get drunk, she just has fun.",
 			cost: 12,
@@ -83,6 +93,7 @@ var gameInfo = {
 			swag: 5
 		},
 		202: {
+			id: "hardAlcohol",
 			name: "Hard Alcohol",
 			description: "Shots! Shots! Shots!",
 			cost: 30,
@@ -90,6 +101,7 @@ var gameInfo = {
 			swag: 3
 		},
 		203: {
+			id: "keg",
 			name: "Keg",
 			description: "I can handstand if you hold my legs. Just don't steal my shoes.",
 			cost: 100,
@@ -97,6 +109,7 @@ var gameInfo = {
 			swag: 1
 		},
 		204: {
+			id: "moonshine",
 			name: "Moonshine",
 			description: "This party is about to get messed up.",
 			cost: 250,
@@ -104,6 +117,7 @@ var gameInfo = {
 			swag: 1
 		},
 		205: {
+			id: "goldInfusedLiquor",
 			name: "Gold Infused Liquor",
 			description: "All class.",
 			cost: 500,
@@ -111,6 +125,7 @@ var gameInfo = {
 			swag: 50
 		},
 		206: {
+			id: "laBonneMerde",
 			name: "La Bonne Merde",
 			description: "It's French.",
 			cost: 2000,
@@ -118,6 +133,7 @@ var gameInfo = {
 			swag: 500
 		},
 		207: {
+			id: "liquidMeteroite",
 			name: "Liquid Meteorite",
 			description: "Who in this world would drink this stuff?",
 			cost: 50000,
@@ -128,47 +144,47 @@ var gameInfo = {
 	
 	promotions: {
 		300: {
-			name: "Send a Text",
-			description: "I knew I shouldn't have gone with prepaid...",
-			cost: 0.25,
-			pull: 1
-		},
-		301: {
+			id: "friendSpaceAd",
 			name: "FriendSpace Ad",
 			description: "Guaranteed to get you clicks.",
 			cost: 100,
 			duration: 7200, // 2 hours
 			pull: 5
 		},
-		302: {
+		301: {
+			id: "sponsoredPost",
 			name: "Sponsored Post",
 			description: "Influencers love to promote parties.",
 			cost: 500,
 			duration: 3600, // 1 hour
 			pull: 10
 		},
-		303: {
+		302: {
+			id: "hireADJ",
 			name: "Hire a DJ",
 			description: "You need someone spinning the best hits for a party.",
 			cost: 2000,
 			duration: 1800, // 30 minutes
 			pull: 50
 		},
-		304: {
+		303: {
+			id: "hireABand",
 			name: "Hire a Band",
 			description: "Hope you don't mind them selling merch at the front door.",
 			cost: 8000,
 			duration: 1200, // 20 minutes
 			pull: 80
 		},
-		305: {
+		304: {
+			id: "celebrityGuestAppearance",
 			name: "Celebrity Guest Appearance",
 			description: "They don't stay long, but the pull is insane.",
 			cost: 50000,
 			duration: 300, // 5 minutes
 			pull: 300
 		},
-		306: {
+		305: {
+			id: "satelliteSignal",
 			name: "Satellite Signal",
 			description: "I want to believe",
 			cost: 10000000,
@@ -179,14 +195,7 @@ var gameInfo = {
 	
 	venues: {
 		400: {
-			name: "Your Apartment",
-			description: "It's homey, that's for sure.",
-			cost: 0,
-			capacity: 20,
-			rent: 0,
-			swag: 0
-		},
-		401: {
+			id: "house",
 			name: "House",
 			description: "Two stories for more party room!",
 			cost: 5000,
@@ -194,7 +203,8 @@ var gameInfo = {
 			rent: 5,
 			swag: 1
 		},
-		402: {
+		401: {
+			id: "mansion",
 			name: "Mansion",
 			description: "Now we're getting classy.",
 			cost: 10000,
@@ -202,7 +212,8 @@ var gameInfo = {
 			rent: 50,
 			swag: 30
 		},
-		403: {
+		402: {
+			id: "yacht",
 			name: "Yacht",
 			description: "All about the S.S. Party!",
 			cost: 25000,
@@ -210,7 +221,8 @@ var gameInfo = {
 			rent: 300,
 			swag: 50
 		},
-		404: {
+		403: {
+			id: "warehouse",
 			name: "Warehouse",
 			description: "It's kinda sketch, but you can fit a lot of people in.",
 			cost: 40000,
@@ -218,7 +230,8 @@ var gameInfo = {
 			rent: 200,
 			swag: -30
 		},
-		405: {
+		404: {
+			id: "airplaneHangar",
 			name: "Airplane Hangar",
 			description: "Now we really have space to party!",
 			cost: 100000,
@@ -226,7 +239,8 @@ var gameInfo = {
 			rent: 500,
 			swag: 5
 		},
-		406: {
+		405: {
+			id: "country",
 			name: "Country",
 			description: "I didn't know you could buy a country, just like that.",
 			cost: 1000000,
@@ -234,7 +248,8 @@ var gameInfo = {
 			rent: 4000,
 			swag: 100
 		},
-		407: {
+		406: {
+			id: "planet",
 			name: "Planet",
 			description: "Party universe!",
 			cost: 500000000,
@@ -263,29 +278,27 @@ var gameInfo = {
 	LABONNEM: 206,
 	LMETEORITE: 207,
 	
-	TEXT: 300,
-	SOCAD: 301,
-	SPONPOST: 302,
-	HIREDJ: 303,
-	HIREBAND: 304,
-	CELEB: 305,
-	SATSIG: 306,
+	SOCAD: 300,
+	SPONPOST: 301,
+	HIREDJ: 302,
+	HIREBAND: 303,
+	CELEB: 304,
+	SATSIG: 305,
 	
-	APARTMENT: 400,
-	HOUSE: 401,
-	MANSION: 402,
-	YACHT: 403,
-	WAREHOUSE: 404,
-	HANGAR: 405,
-	COUNTRY: 406,
-	PLANET: 407,
+	HOUSE: 400,
+	MANSION: 401,
+	YACHT: 402,
+	WAREHOUSE: 403,
+	HANGAR: 404,
+	COUNTRY: 405,
+	PLANET: 406,
 	
 	FSUPPLY: 100,
 	LSUPPLY: 107,
 	FALCOHOL: 200,
 	LALCOHOL: 207,
 	FPROMO: 300,
-	LPROMO: 306,
+	LPROMO: 305,
 	FVENUE: 400,
-	LVENUE: 407
+	LVENUE: 406
 };

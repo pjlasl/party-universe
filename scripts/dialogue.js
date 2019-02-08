@@ -1,12 +1,12 @@
-/* =============================================================
+// =============================================================
 // dialogue.js
 // -------------------------------------------------------------
 // All the key dialogue used in the game, in English.
-// ===========================================================*/
+// =============================================================
 
 var keyList = [
 	"It's just you here...",
-	"Welcome back to the party!",
+	"Welcome back to the party!"
 ];
 
 var rejectionList = [
@@ -52,7 +52,16 @@ var acceptanceList = [
 	"I hope the beer is still cold!",
 	"I'm there.",
 	"Is it even a party without me there?",
-	"Hope there's enough beer!"
+	"Hope there's enough beer!",
+	"I love to party!",
+	"If there's a party, I'm there.",
+	"I haven't been invited to a party in years! This is so exciting.",
+	"no one ever invites me to things lol thanks this means a lot :)",
+	"wow! of course ill come to your party",
+	"it means so much that you'd invite me, thank you!",
+	"im already here my guy",
+	"outside",
+	"i luv 2 party"
 ];
 
 var noRoomList = [
@@ -60,7 +69,11 @@ var noRoomList = [
 	"Looks like there's no more room!",
 	"I'd love to, but there's no room!",
 	"Looks like your party is at max capacity",
-	"No room for me."
+	"No room for me.",
+	"You're gonna need more room before I can party.",
+	"Make room for me first.",
+	"Wow someone's popular lol, no room.",
+	"i can't squeeze in?"
 ];
 
 var kickedOutList = [
@@ -73,7 +86,16 @@ var kickedOutList = [
 	"Forget this party.",
 	"I didn't even want to be here, anyway.",
 	"Smell ya later.",
-	"Peace!"
+	"Peace!",
+	"bye felicia!",
+	"wow thought we were tight",
+	"guess we're not friends anymore",
+	"thought we were friends",
+	"am i the friend that nobody likes? :(",
+	"hey that really hurt my feelings :/",
+	"can we still chill later?",
+	"Disrespectful.",
+	"wack."
 ];
 
 var genericTextMessages = [
@@ -85,7 +107,12 @@ var genericTextMessages = [
 	"whats this talk about a party?",
 	"omg did you see that light in the sky?",
 	"yo is the power at your house getting weird?",
-	"do you have that $20 you owe me?"
+	"do you have that $20 you owe me?",
+	"what was that cream you were telling me about?",
+	"Wanna swap skincare routines?",
+	"i think tonight's the night",
+	"should i text her?",
+	"don't tell anyone but i saw Mr. " + chance.last() + " with Mrs. " + chance.last() + " last night."
 ];
 
 var genericWrongNumberMessages = [
@@ -105,7 +132,8 @@ var genericWrongNumberMessages = [
 	"kEEp PartYing",
 	"thEre Is 0nLy 1 wAy...tO PARTY",
 	"pArTy aLL nite aND dAy",
-	"y0u cAn rEaCH uS...tHr0ugH pArTy"
+	"y0u cAn rEaCH uS...tHr0ugH pArTy",
+	chance.sentence({words:chance.integer({min:5, max:20})})
 ];
 
 var genericFriendSpacePosts = [
@@ -127,7 +155,6 @@ var genericFriendSpacePosts = [
 	"who does the emojis with the nose anymore? only weirdos... :-)",
 	"just trying to get this bread (i love carbs)",
 	"working on a new beat, gonna be fire, so stoked",
-	"y'all hear that new yung ez joint?",
 	"I heard someone was trying to throw the biggest party ever?",
 	"wheres this epic party i keep hearing about? someone text me the addy",
 	"ALL YOUR BASE ARE BELONG TO US",
@@ -244,5 +271,20 @@ var genericFriendSpacePosts = [
 	"Just pretended to be asleep and then actually fell asleep.",
 	"Very disappointing when you take that last sip of tea and realize you forgot to stir in the sugar.",
 	"If you think about it, every exit is an emergency exit under the right circumstances.",
-	"I wear sunglasses, not to block the sun from my eyes, but actually just so I have something to yank off when something crazy happens."
+	"I wear sunglasses, not to block the sun from my eyes, but actually just so I have something to yank off when something crazy happens.",
+	"I heard Joe's Pizza Shack uses " + chance.animal() + " meat in their sauce... Is it true?",
+	"does anyone know if " + chance.first() + " still works at Joe's Pizza Shack?",
+	"Is Joe's Pizza Shack hiring? I know how to cook with " + chance.animal() + " meat, I'd be perfect",
+	"I heard Joe's Pizza Shack used to be called " + chance.first() + "'s Pizza Shack but the owner changed his name!",
+	chance.first() + " and I went to joe's pizza shack at " + chance.hour() + chance.ampm() + " and they were closed!! wtf",
+	"anyone see that extra bright star in the sky? around " + chance.hour() + chance.ampm() + "?",
+	chance.first() + ", " + chance.first() + ", and I are all going to Joe's Pizza Shack for Happy Hour! Join us!",
+	chance.radio() + " is doing a special on Joe's Pizza Shack! I wonder if they'll ask about the " + chance.animal() + " meat..."
+];
+
+var genericFriendSpaceAds = [
+	"Don't forget to catch " + chance.name() + " on " + chance.tv() + " news! Every weekday at " + chance.hour() + chance.ampm() + "!",
+	"Looking for Pizza for your next party? Try Joe's Pizza Shack! We have all the pizza. Literally all of it. We ransacked all the other shops in town!",
+	"Get a phone plan that knows you! Here at Telecom we know everything about you. No need to get in touch with us, we'll get in touch with you.",
+	"In need of the perfect gift? Good luck! But, if you need a card to go along that perfect gift, Cardsmart has you coverred! We have greeting cards, sorry cards, birthday cards, and more!"
 ];

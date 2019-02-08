@@ -3,13 +3,14 @@
 // -------------------------------------------------------------
 // All the games data that's variable and can be changed. Also
 // seen as the save data.
-// ===========================================================*/
+// =============================================================
 var gameData = {
 	// Generic data
 	party: 1,
-	partyCapacity: 20,
+	partyCapacity: 100,
 	
 	money: 0.0,
+	totalMoney: 0.0,
 	doorFee: 0.0,
 	
 	clout: 0.0,
@@ -115,8 +116,11 @@ var gameData = {
 	
 	promotions: {
 		300: {
+			amount: 0,
+			currentDuration: 0,
 			amountMod: 1,
 			costMod: 1,
+			durationMod: 1,
 			pullMod: 1
 		},
 		301: {
@@ -158,69 +162,54 @@ var gameData = {
 			costMod: 1,
 			durationMod: 1,
 			pullMod: 1
-		},
-		306: {
-			amount: 0,
-			currentDuration: 0,
-			amountMod: 1,
-			costMod: 1,
-			durationMod: 1,
-			pullMod: 1
 		}
 	},
 	
 	venues: {
 		400: {
-			amount: 1,
+			amount: 0,
 			amountMod: 1,
 			costMod: 1,
 			capacityMod: 1,
 			rentMod: 1
 		},
 		401: {
-			amount: 1,
+			amount: 0,
 			amountMod: 1,
 			costMod: 1,
 			capacityMod: 1,
 			rentMod: 1
 		},
 		402: {
-			amount: 1,
+			amount: 0,
 			amountMod: 1,
 			costMod: 1,
 			capacityMod: 1,
 			rentMod: 1
 		},
 		403: {
-			amount: 1,
+			amount: 0,
 			amountMod: 1,
 			costMod: 1,
 			capacityMod: 1,
 			rentMod: 1
 		},
 		404: {
-			amount: 1,
+			amount: 0,
 			amountMod: 1,
 			costMod: 1,
 			capacityMod: 1,
 			rentMod: 1
 		},
 		405: {
-			amount: 1,
+			amount: 0,
 			amountMod: 1,
 			costMod: 1,
 			capacityMod: 1,
 			rentMod: 1
 		},
 		406: {
-			amount: 1,
-			amountMod: 1,
-			costMod: 1,
-			capacityMod: 1,
-			rentMod: 1
-		},
-		407: {
-			amount: 1,
+			amount: 0,
 			amountMod: 1,
 			costMod: 1,
 			capacityMod: 1,

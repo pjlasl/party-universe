@@ -1,5 +1,33 @@
+/* Font */
+@font-face {
+	font-family: "Munro";
+	font-style: normal;
+	src: url("../fonts/munro.ttf"); 
+}
+
+@font-face {
+	font-family: "Munro Narrow";
+	font-style: narrow;
+	src: url("../fonts/munro_narrow.ttf");
+}
+
+@font-face {
+	font-family: "Munro Small";
+	font-style: small;
+	src: url("../fonts/munro_narrow.ttf");
+}
+
+
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", Sans-Serif;
+}
+
+button {
+	font-family: "Roboto", Sans-Serif;
+}
+
+textarea {
+	font-family: "Roboto", Sans-Serif;
 }
 
 #textMessageBox > ul,
@@ -43,6 +71,7 @@ body {
 #textMessages > li > small {
 	color: lightgrey;
 	text-align: right;
+	/* font-family: "Munro Small", monospace; */
 }
 
 #friendSpaceBox > h3 {
@@ -106,4 +135,5 @@ body {
 
 #friendSpaceFeed > li > small {
 	color: grey;
+	/* font-family: "Munro Small", monospace; */
 }
