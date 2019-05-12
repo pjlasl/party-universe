@@ -188,14 +188,17 @@ var mainGameLoop = window.setInterval(function() {
 // =============================================================
 // Update functions
 // -------------------------------------------------------------
+
+
 function updateStatDisplay() {
+	var today = new Date();
 	updateButtons();
 	updateClout();
-	
-	document.getElementById("party").innerHTML = gameData.party + "/" + gameData.partyCapacity + " Attendees";
-	document.getElementById("money").innerHTML = "Money: $" + gameData.money.toFixed(2);
-	document.getElementById("clout").innerHTML = "Clout: " + gameData.clout.toFixed(2) + "%";
-	document.getElementById("doorFee").innerHTML = "Door Fee: $" + gameData.doorFee.toFixed(2);
+	$('#party').html(`${gameData.party} / ${gameData.partyCapacity}`);
+	$('#money').html(`${gameData.money.toFixed(2)}`);
+	$('#clout').html(`${gameData.clout.toFixed(2)}`);
+	$('#doorFee').html(`${gameData.doorFee.toFixed(2)}`);
+	$('#timeOfDay').html(`${today.getHours() + ":" + (today.getMinutes() < 10 ? '0' + today.getMinutes() : today.getMinutes())}`);
 }
 
 function updateButtons() {

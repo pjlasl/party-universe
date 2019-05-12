@@ -22,12 +22,13 @@ body {
 	font-family: "Roboto", Sans-Serif;
 }
 
-button {
+/* button {
 	font-family: "Roboto", Sans-Serif;
-}
+} */
 
 textarea {
 	font-family: "Roboto", Sans-Serif;
+	
 }
 
 #textMessageBox > ul,
@@ -48,15 +49,16 @@ textarea {
 
 #textMessageBox {
 	overflow: auto;
-	width: 380px;
+	/* width: 380px; */
 	height: 680px;
 	background: black;
 	color: white;
+	border-radius: 30px;
 }
 
 #friendSpaceBox {
 	overflow: auto;
-	width: 380px;
+	/* width: 380px; */
 	height: 680px;
 	background: lightblue;
 	color: black;
