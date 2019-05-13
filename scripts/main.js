@@ -216,8 +216,8 @@ function updateButtons() {
 		
 		if (i == 100 || gameData.totalMoney > info.cost * percentToReveal) {
 			var newItem = document.createElement("DIV");
-			newItem.innerHTML = '<span id="' + info.id + '">' + data.amount + ' ' + info.name +
-				'</span> <button onclick="buySupplies(' + i + ')">Buy ($' + info.cost * data.costMod + ')</button></br>';
+			newItem.innerHTML = '<span id="' + info.id + '">' + info.name + ': ' + data.amount +
+				'</span> <button type="button" class="btn btn-sm btn-default" onclick="buySupplies(' + i + ')">Buy ($' + info.cost * data.costMod + ')</button></br>';
 			
 			supplyList.appendChild(newItem);
 			
@@ -235,8 +235,8 @@ function updateButtons() {
 		
 		if (i == 200 || gameData.totalMoney > info.cost * percentToReveal) {
 			var newItem = document.createElement("DIV");
-			newItem.innerHTML = '<span id="' + info.id + '">' + data.amount + ' ' + info.name +
-				'</span> <button onclick="buyAlcohol(' + i + ')">Buy ($' + info.cost * data.costMod + ')</button></br>';
+			newItem.innerHTML = '<span id="' + info.id + '">' + info.name + ': ' + data.amount +
+				'</span> <button type="button" class="btn btn-sm btn-default" onclick="buyAlcohol(' + i + ')">Buy ($' + info.cost * data.costMod + ')</button></br>';
 			
 			alcoholList.appendChild(newItem);
 			
@@ -254,8 +254,8 @@ function updateButtons() {
 		
 		if (i == 300 || gameData.totalMoney > info.cost * percentToReveal) {
 			var newItem = document.createElement("DIV");
-			newItem.innerHTML = '<span id="' + info.id + '">' + data.amount + ' ' + info.name +
-				'</span> <button onclick="buyPromotions(' + i + ')">Buy ($' + info.cost * data.costMod + ')</button></br>';
+			newItem.innerHTML = '<span id="' + info.id + '">' + info.name + ': ' + data.amount +
+				'</span> <button type="button" class="btn btn-sm btn-default" onclick="buyPromotions(' + i + ')">Buy ($' + info.cost * data.costMod + ')</button></br>';
 			
 			promotionsList.appendChild(newItem);
 			
@@ -273,8 +273,8 @@ function updateButtons() {
 		
 		if (i == 400 || gameData.totalMoney > info.cost * percentToReveal) {
 			var newItem = document.createElement("DIV");
-			newItem.innerHTML = '<span id="' + info.id + '">' + data.amount + ' ' + info.name +
-				'</span> <button onclick="buyVenues(' + i + ')">Buy ($' + info.cost * data.costMod + ')</button></br>';
+			newItem.innerHTML = '<span id="' + info.id + '">' + info.name + ': ' + data.amount +
+				'</span> <button type="button" class="btn btn-sm btn-default" onclick="buyVenues(' + i + ')">Buy ($' + info.cost * data.costMod + ')</button></br>';
 			
 			venuesList.appendChild(newItem);
 			

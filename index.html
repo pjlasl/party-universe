@@ -60,19 +60,23 @@
 					<button class="btn btn-sm btn-primary" onclick="sendAText()" id="sendAText">Send a Text ($0.25)</button> <br>
 					<button class="btn btn-sm btn-danger" onclick="kickSomeoneOut()" id="kickSomeoneOut">Kick Someone Out</button>
 
-					<h3>Entrance Fee</h3>
+					<h3 class="mt-2">Entrance Fee</h3>
 					<span>Door Fee: <span id="doorFee"></span></span>
 					<button class="btn btn-sm btn-success" onclick="doorFee(1)">+$1</button>
 					<button class="btn btn-sm btn-danger" onclick="doorFee(-1)" id="doorFeeDown">-$1</button>
 
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<ul class="mt-3 nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item">
 							<a class="nav-link active" id="supplies-tab" data-toggle="tab" href="#supplies" role="tab" aria-controls="profile"
-							aria-selected="false">Supplies</a>
+							aria-selected="true">Supplies</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="promotions-tab" data-toggle="tab" href="#promotions" role="tab" aria-controls="contact"
-							aria-selected="false">Promotions</a>
+								<a class="nav-link" id="drinks-tab" data-toggle="tab" href="#drinks" role="tab" aria-controls="profile"
+								aria-selected="false">Drinks</a>
+							</li>
+						<li class="nav-item">
+							<a class="nav-link" id="promo-tab" data-toggle="tab" href="#promos" role="tab" aria-controls="contact"
+							aria-selected="false">Promos</a>
 						</li>
 						<li class="nav-item">
 								<a class="nav-link" id="venues-tab" data-toggle="tab" href="#venues" role="tab" aria-controls="contact"
@@ -80,19 +84,16 @@
 							</li>
 					</ul>
 					<div class="tab-content" id="myTabContent">
-						<div class="tab-pane fade show active" id="supplies" role="tabpanel" aria-labelledby="supplies-tab">
-							<h3>Supplies</h3>
+						<div class="p-2 tab-pane fade show active" id="supplies" role="tabpanel" aria-labelledby="supplies-tab">
 							<div id="suppliesList"></div>
-							
-							<h3>Alcohol</h3>
+						</div>
+						<div class="p-2 tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
 							<div id="alcoholList"></div>
 						</div>
-						<div class="tab-pane fade" id="promotions" role="tabpanel" aria-labelledby="promotions-tab">
-							<h3>Promotions</h3>
+						<div class="p-2 tab-pane fade" id="promos" role="tabpanel" aria-labelledby="promo-tab">
 							<div id="promotionsList"></div>
 						</div>
-						<div class="tab-pane fade" id="venues" role="tabpanel" aria-labelledby="venues-tab">
-							<h3>Venues</h3>
+						<div class="p-2 tab-pane fade" id="venues" role="tabpanel" aria-labelledby="venues-tab">
 							<div id="venuesList"></div>
 						</div>
 					</div>
@@ -112,7 +113,7 @@
 								<i class="fas fa-battery-full"></i>
 							</span>
 						</div>
-						<h3>Messages</h3>
+						<h3>Messages <span class="float-right"><i style="font-size: smaller;" class="fas fa-ellipsis-v"></i></span></h3>
 						<div style="height: 560px; overflow-y: auto;">
 							<ul id="textMessages"></ul>
 						</div>
